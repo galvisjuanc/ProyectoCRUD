@@ -1,12 +1,5 @@
 
-e
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(¥ä±µ8§‡Èá1
-i
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ıÿÿÿÿ8¨‡Èá1
-S
-java:S1481"6Remove this unused "preparedStatement" local variable.(ÆÃ«ª8ª‡Èá1
-S
-java:S6437"6Revoke and change this password, as it is compromised.(¥ä±µ8«‡Èá1
-G	java:S106"+Replace this use of System.out by a logger.(½™Å©8­‡Èá1
-L	java:S106"+Replace this use of System.out by a logger.(ö—ï½úÿÿÿÿ8‹ŠÈá1
-L	java:S106"+Replace this use of System.out by a logger.(ÌŞ¿şÿÿÿÿ8ŒŠÈá1
+R
+java:S6437"6Revoke and change this password, as it is compromised.(»°ú8­æÍÈá1
+L	java:S106"+Replace this use of System.out by a logger.(ö—ï½úÿÿÿÿ8°æÍÈá1
+L	java:S106"+Replace this use of System.out by a logger.(ÌŞ¿şÿÿÿÿ8±æÍÈá1
