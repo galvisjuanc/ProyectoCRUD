@@ -1,4 +1,4 @@
-package org.proyectocrud;
+package org.proyectocrud.main;
 
 import java.sql.*;
 
