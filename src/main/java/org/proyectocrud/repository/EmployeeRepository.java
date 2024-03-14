@@ -42,6 +42,22 @@ public class EmployeeRepository implements Repository<Employee> {
     @Override
     public void save(Employee employee) throws SQLException {
         String sql = "INSERT INTO employees (first_name, pa_surname, ma_surname, email, salary) VALUES (?, ?, ?, ?, ?)";
+        insertOrUpdateEmployee(employee, sql);
+    }
+
+    @Override
+    public void update(Integer id, Employee employee) throws SQLException {
+        if (getById(id) != null) {
+            String sql = "UPDATE employees SET first_name = ?, pa_surname = ?, ma_surname = ?, email = ?, salary = ? WHERE id = " + id;
+            insertOrUpdateEmployee(employee, sql);
+            System.out.println("Empleado existe, actualización realizada");
+        } else {
+            save(employee);
+            System.out.println("Empleado no existe, nuevo usuario creado");
+        }
+    }
+
+    private void insertOrUpdateEmployee(Employee employee, String sql) throws SQLException {
         try (PreparedStatement preparedStatement = getConnection().prepareStatement(sql)) {
             preparedStatement.setString(1, employee.getFirst_name());
             preparedStatement.setString(2, employee.getPa_surname());
