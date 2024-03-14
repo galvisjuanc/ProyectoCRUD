@@ -17,16 +17,31 @@ public class Main {
 
             System.out.println("-- Insertando un empleado --");
             Employee employee = new Employee();
-            employee.setFirst_name("Camilo");
-            employee.setPa_surname("Pimentel");
-            employee.setMa_surname("Gutierritos");
-            employee.setEmail("camilopimentel@gmail.com");
-            employee.setSalary(19000F);
+            employee.setFirst_name("Camila");
+            employee.setPa_surname("Riano");
+            employee.setMa_surname("Zarate");
+            employee.setEmail("camilariano@gmail.com");
+            employee.setSalary(24000F);
 
             repository.save(employee);
 
-            System.out.println("--- NUevo empleado insertado ---");
+            System.out.println("--- Nuevo empleado insertado ---");
             repository.findAll().forEach(System.out::println);
+
+            System.out.println("--- Actualizando o Insertando empleado --");
+            Integer idEmployee = 8;
+            Employee employeeUpdated = new Employee();
+            employeeUpdated.setFirst_name("JuanCamilo");
+            employeeUpdated.setPa_surname("Galvis");
+            employeeUpdated.setMa_surname("Cuellar");
+            employeeUpdated.setEmail("juancagalvis@gmail.com");
+            employeeUpdated.setSalary(16000F);
+
+            repository.update(idEmployee, employeeUpdated);
+            System.out.println("Empleado actualizado");
+            System.out.println(repository.getById(idEmployee));
+
+
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("La conexion a la base de datos falló");
