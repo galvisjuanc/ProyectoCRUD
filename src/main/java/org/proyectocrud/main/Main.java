@@ -44,7 +44,7 @@ public class Main {
             System.out.println("Empleado a eliminar con id: 9");
             repository.delete(9);
 
-            System.out.println("----- Lista de Usuarios ------");
+            System.out.println("------ Lista de Usuarios ------");
             repository.findAll().forEach(System.out::println);
 
         } catch (Exception e) {
