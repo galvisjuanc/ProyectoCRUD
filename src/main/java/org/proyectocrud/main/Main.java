@@ -17,8 +17,6 @@ public class Main {
             Repository<Employee> repository = new EmployeeRepository();
             repository.findAll().forEach(System.out::println);
 
-            System.out.println(repository.getById(3));
-
             System.out.println("-- Insertando un empleado --");
             Employee employee = new Employee();
             employee.setFirst_name("Camila");
