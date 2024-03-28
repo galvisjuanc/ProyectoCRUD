@@ -1,12 +1,3 @@
 
-‹
-java:S1130"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(Á¯¦þ8ÕàÇ€è1
-]	java:S125"<This block of commented-out lines of code should be removed.(Çšù±þÿÿÿÿ8õÊÏ·å1
-^
-java:S1128"<Remove this unused import 'org.proyectocrud.model.Employee'.(”Ž˜çýÿÿÿÿ8õàÇ€è1
-m
-java:S1128"KRemove this unused import 'org.proyectocrud.repository.EmployeeRepository'.(¼òÄôÿÿÿÿÿ8öàÇ€è1
-`
-java:S1128"CRemove this unused import 'org.proyectocrud.repository.Repository'.(š›žú8öàÇ€è1
-g
-java:S1128"ERemove this unused import 'org.proyectocrud.util.DatabaseConnection'.(ÛÐ¨®ýÿÿÿÿ8öàÇ€è1
+a	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(›ÒËc8âñ‘°è1
+G	java:S106"+Replace this use of System.out by a logger.(øå‚±8ìñ‘°è1
