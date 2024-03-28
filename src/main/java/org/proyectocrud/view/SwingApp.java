@@ -1,4 +1,4 @@
-package org.proyectocrud.view;
+/*package org.proyectocrud.view;
 
 import org.proyectocrud.model.Employee;
 import org.proyectocrud.repository.EmployeeRepository;
@@ -217,3 +217,4 @@ public class SwingApp extends JFrame {
         }
     }
 }
+*/
