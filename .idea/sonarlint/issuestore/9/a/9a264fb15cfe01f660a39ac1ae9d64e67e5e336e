@@ -1,3 +1,5 @@
 
-L	java:S1066"+Replace this use of System.out by a logger.(ëº‚Âÿÿÿÿÿ8º­‘¯è1
-L	java:S1069"+Replace this use of System.out by a logger.(ÇŞûĞşÿÿÿÿ8¾­‘¯è1
+>
+java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8Èƒ×è1
+L	java:S1068"+Replace this use of System.out by a logger.(ëº‚Âÿÿÿÿÿ8—Èƒ×è1
+L	java:S106;"+Replace this use of System.out by a logger.(ÇŞûĞşÿÿÿÿ8˜Èƒ×è1
