@@ -9,41 +9,13 @@ import java.sql.*;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
-        try (Connection connection = DatabaseConnection.getInstance()) {
 
-            if (connection.getAutoCommit()) {
-                connection.setAutoCommit(false);
-            }
+        System.out.println("---Listando todos---");
+        Repository<Employee> repository = new EmployeeRepository();
+        repository.findAll().forEach(System.out::println);
 
-            try {
-                Repository<Employee> repository = new EmployeeRepository(connection);
+        System.out.println("---Buscando por ID---");
+        System.out.println(repository.getById(2));
 
-                System.out.println("-- Insertado un nuevo cliente --");
-
-                Employee e = new Employee();
-
-                e.setFirst_name("Carlos");
-                e.setPa_surname("Lopez");
-                e.setMa_surname("Villa");
-                e.setEmail("carl222@example.com");
-                e.setSalary(300F);
-                e.setCurp("MECjkl987guihio214");
-                repository.save(e);
-                connection.commit();
-
-                e.setFirst_name("David");
-                e.setPa_surname("Lopez");
-                e.setMa_surname("Villa");
-                e.setEmail("davlop@example.com");
-                e.setSalary(300F);
-                e.setCurp("MECjkl987guihio215");
-                repository.save(e);
-                connection.commit();
-
-            } catch (SQLException sqlError) {
-                connection.rollback();
-                throw new RuntimeException(sqlError);
-            }
-        }
     }
 }
