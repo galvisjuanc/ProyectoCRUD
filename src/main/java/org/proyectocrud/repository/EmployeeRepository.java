@@ -11,7 +11,7 @@ public class EmployeeRepository implements Repository<Employee> {
 
     private Connection getConnection() throws SQLException {
         return DatabaseConnection.getConnection();
-    };
+    }
 
     @Override
     public List<Employee> findAll() throws SQLException {
